@@ -38,20 +38,20 @@ $("document").ready(function() {
     const app = new Clarifai.App({
       apiKey: "1df07f26a51e4b7fb5399031fc6660ba"
     });
-
+    
     app.models
-      .predict(Clarifai.GENERAL_MODEL, imgLink, {
+      .predict({id: "flowers!"}, imgLink, {
         selectConcepts: [
-          { name: "daisy" },
-          { name: "anemone" },
-          { name: "aster" },
-          { name: "dahlia" },
-          { name: "hydrangea" },
-          { name: "iris" },
-          { name: "larkspur" },
-          { name: "tulip" },
-          { name: "rose" },
-          { name: "Rose" }
+          { name: "Anemone" },
+          { name: "Aster" },
+          { name: "Dahlia" },
+          { name: "Daisy" },
+          { name: "Hibiscus" },
+          { name: "Hydrangea" },
+          { name: "Iris" },
+          { name: "Larkspur" },
+          { name: "Rose" },
+          { name: "Tulip" }
         ]
       })
       .then(
