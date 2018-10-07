@@ -5,8 +5,8 @@ $("document").ready(function() {
     var resValue = new Array("", "", "");
     var resValHack = "";
     if ($files.length) {
-      if ($files[0].size > 4096000) {
-        document.getElementById("status").innerHTML = "File must be < 4mb";
+      if ($files[0].size > 512000) {
+        document.getElementById("status").innerHTML = "File must be < 5mb";
         return false;
       }
 
