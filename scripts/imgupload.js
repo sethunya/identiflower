@@ -64,7 +64,9 @@ $("document").ready(function() {
             console.log(resName[i]);
             resValue[i] = response.outputs[0].data.concepts[i].value;
             resValHack = resValue[i];
-            resValHack = String(resValHack * 100).substring(0, 4);
+            resValHack = resValHack * 100;
+            resValHack = String(resValHack);
+            resValHack = resValHack.substring(0,5);
             resValue[i] = resValHack;
             console.log(resValue[i]);
           }
