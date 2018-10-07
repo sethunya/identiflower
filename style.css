@@ -1,0 +1,32 @@
+.coolflowers {
+  background: url(assets/background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.85;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+.container {
+  opacity: 100%;
+  background-color: white;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(235, 235, 235);
+}
+#header {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+#status {
+  margin-top: 1%;
+}
+.image {
+  max-width: 80%;
+}
